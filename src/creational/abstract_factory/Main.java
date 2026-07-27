@@ -16,7 +16,7 @@ public class Main {
             throw new IllegalArgumentException("Unknown cloud provider: " + cloudServiceProvider);
         }
         // optionally, factory method can be used here
-        // CloudServiceFactory factory = CloudServiceFactoryProducer.getFactory(cloudServiceProvider);
+        // CloudServiceFactory factory = new CloudServiceFactoryProducer().getFactory(cloudServiceProvider);
 
 
         new NotificationService(factory).run();
